@@ -261,7 +261,7 @@ b {
   justify-content: space-between;
 }
 .collection-section__table {
-  width: 87%;
+  width: 100%;
   border-collapse: collapse;
 }
 .collection-section__table__header {
@@ -323,17 +323,30 @@ b {
   flex-direction: column;
 }
 
-.gap-20 {
+.gap {
   display: flex;
+}
+.gap-20 {
   gap: 20px;
 }
-
-.text-middle {
-  text-align: center;
+.gap-15 {
+  gap: 15px;
+}
+.gap-10 {
+  gap: 10px;
 }
 
 .text-right {
   text-align: right;
+}
+
+.explore-all {
+  margin-left: auto;
+  margin-right: 0;
+  color: #ACADB9;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=mainPage.css.map */
