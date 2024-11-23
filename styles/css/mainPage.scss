@@ -1,10 +1,11 @@
-$whiteColor: #f9f9f9f9;
+$whiteColor: #f9f9f9;
 $headerTextColor: #606060;
+$blackColor: #141416;
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  //box-sizing: border-box;
 }
 
 html {
@@ -21,6 +22,7 @@ html {
     width: 100%;
   }
 }
+
 
 
 .header {
@@ -68,6 +70,7 @@ html {
     width: calc(100% / (1440 / 2) * 348);
     height: 100%;
     font-family: "Poppins", sans-serif;
+    text-align: center;
 
     &::placeholder {
       color: #C2C3CB;
@@ -78,7 +81,7 @@ html {
 }
 
 .button {
-  background-color: #141416;
+  background-color: $blackColor;
   color: white;
   font-size: 16px;
   text-transform: uppercase;
@@ -114,7 +117,7 @@ html {
 .medium-big-text {
   font-size: 36px;
   font-weight: 600;
-  color: #141416;
+  color: $blackColor;
   font-family: "Public Sans", sans-serif;
 }
 
@@ -127,13 +130,15 @@ html {
 
 
 b {
-  color: #141416;
+  color: $blackColor;
+  font-weight: 600;
 }
 
 .about-section {
   display: flex;
   margin-left: 30px;
   background-color: $whiteColor;
+  margin-top: 110px;
 
   &__line {
     background-color: lightgray;
@@ -185,6 +190,7 @@ b {
   background-color: #F1F1F1;
   font-weight: 600;
   gap: 80px;
+  padding-bottom: 100px;
 
   &__title {
     color: #C5C5C5;
@@ -197,9 +203,9 @@ b {
 
 .nft-cards {
   display: flex;
+  width: 100%;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 35px;
+  justify-content: space-around;
   align-items: center;
 
   &__item {
@@ -241,6 +247,11 @@ b {
       grid-gap: 10px;
       align-items: center;
 
+      &__price {
+        display: flex;
+        align-items: center;
+      }
+
       &__current-bid {
         display: flex;
         flex-direction: column;
@@ -254,11 +265,7 @@ b {
           font-weight: 400;
         }
 
-        &__price {
-          img {
-            vertical-align: middle;
-          }
-        }
+
       }
 
 
@@ -274,4 +281,106 @@ b {
 
 .relative {
   position: relative;
+}
+
+.big-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: 70px;
+}
+
+.collection-section {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  gap: 65px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &__table {
+    width: 87%;
+    border-collapse: collapse;
+    &__header {
+      text-align: left;
+      &-item {
+        color: #93989A;
+        border-bottom: 30px solid transparent;
+        font-size: 20px;
+        font-weight: 500;
+
+        &__collection{
+          width: 25%;
+        }
+      }
+    }
+
+    &__body{
+     &-row{
+       border-bottom: 1px solid lightgrey;
+     }
+
+      &-cell{
+        padding-bottom: 20px;
+        padding-top: 30px;
+        &__title{
+          color: $blackColor;
+          font-size: 22px;
+          font-weight: 500;
+        }
+
+        &__subtitle{
+          color: #64748B;
+          font-size: 17px;
+          font-weight: 500;
+        }
+
+        &__volume {
+          font-size: 22px;
+          font-weight: 600;
+          color: $blackColor;
+        }
+
+        &__24h {
+          color: #10C352;
+          font-size: 22px;
+          font-weight: 500;
+        }
+
+        &__floor-price {
+          font-size: 22px;
+          font-weight: 600;
+        }
+
+        &__numbers {
+          font-size: 21px;
+          font-weight: 500;
+          color: $blackColor;
+        }
+      }
+    }
+  }
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-20 {
+  display: flex;
+  gap: 20px
+}
+
+.text-middle {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }

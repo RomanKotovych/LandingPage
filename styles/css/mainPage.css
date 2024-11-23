@@ -1,11 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html {
-  background-color: rgba(249, 249, 249, 0.9764705882);
+  background-color: #f9f9f9;
 }
 
 .wrapper {
@@ -21,7 +20,7 @@ html {
 
 .header {
   display: flex;
-  background-color: rgba(249, 249, 249, 0.9764705882);
+  background-color: #f9f9f9;
   justify-content: space-between;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -59,6 +58,7 @@ html {
   width: 48.3333333333%;
   height: 100%;
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 .header__search::placeholder {
   color: #C2C3CB;
@@ -80,7 +80,7 @@ html {
 }
 
 .button-white {
-  background-color: rgba(249, 249, 249, 0.9764705882);
+  background-color: #f9f9f9;
   border: 1px solid black;
   border-radius: 12px;
   color: black;
@@ -114,12 +114,14 @@ html {
 
 b {
   color: #141416;
+  font-weight: 600;
 }
 
 .about-section {
   display: flex;
   margin-left: 30px;
-  background-color: rgba(249, 249, 249, 0.9764705882);
+  background-color: #f9f9f9;
+  margin-top: 110px;
 }
 .about-section__line {
   background-color: lightgray;
@@ -164,6 +166,7 @@ b {
   background-color: #F1F1F1;
   font-weight: 600;
   gap: 80px;
+  padding-bottom: 100px;
 }
 .weekly-section__title {
   color: #C5C5C5;
@@ -174,9 +177,9 @@ b {
 
 .nft-cards {
   display: flex;
+  width: 100%;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 35px;
+  justify-content: space-around;
   align-items: center;
 }
 .nft-cards__item {
@@ -215,6 +218,10 @@ b {
   grid-gap: 10px;
   align-items: center;
 }
+.nft-cards__item__price-and-button__price {
+  display: flex;
+  align-items: center;
+}
 .nft-cards__item__price-and-button__current-bid {
   display: flex;
   flex-direction: column;
@@ -227,9 +234,6 @@ b {
   color: #94A3B8;
   font-weight: 400;
 }
-.nft-cards__item__price-and-button__current-bid__price img {
-  vertical-align: middle;
-}
 .nft-cards__item__price-and-button .button, .nft-cards__item__price-and-button .button-white {
   width: auto;
   grid-column: 2;
@@ -239,6 +243,97 @@ b {
 
 .relative {
   position: relative;
+}
+
+.big-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: 70px;
+}
+
+.collection-section {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  gap: 65px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.collection-section__table {
+  width: 87%;
+  border-collapse: collapse;
+}
+.collection-section__table__header {
+  text-align: left;
+}
+.collection-section__table__header-item {
+  color: #93989A;
+  border-bottom: 30px solid transparent;
+  font-size: 20px;
+  font-weight: 500;
+}
+.collection-section__table__header-item__collection {
+  width: 25%;
+}
+.collection-section__table__body-row {
+  border-bottom: 1px solid lightgrey;
+}
+.collection-section__table__body-cell {
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+.collection-section__table__body-cell__title {
+  color: #141416;
+  font-size: 22px;
+  font-weight: 500;
+}
+.collection-section__table__body-cell__subtitle {
+  color: #64748B;
+  font-size: 17px;
+  font-weight: 500;
+}
+.collection-section__table__body-cell__volume {
+  font-size: 22px;
+  font-weight: 600;
+  color: #141416;
+}
+.collection-section__table__body-cell__24h {
+  color: #10C352;
+  font-size: 22px;
+  font-weight: 500;
+}
+.collection-section__table__body-cell__floor-price {
+  font-size: 22px;
+  font-weight: 600;
+}
+.collection-section__table__body-cell__numbers {
+  font-size: 21px;
+  font-weight: 500;
+  color: #141416;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-20 {
+  display: flex;
+  gap: 20px;
+}
+
+.text-middle {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 /*# sourceMappingURL=mainPage.css.map */
