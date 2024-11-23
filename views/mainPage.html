@@ -7,41 +7,146 @@
     <link rel="stylesheet" href="../styles/mainPage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="header_box wrapper">
-            <div class="header_logo">
-                <img src="../src/logo.png" alt="logo">
-            </div>
+    <header class="header wrapper">
+        <div class="header_section">
+            <img src="../src/logo.png" alt="logo">
             <ul class="header_list">
-                <li class="header_list-item">About</li>
-                <li class="header_list-item">Services</li>
-                <li class="header_list-item">Pricing</li>
-                <li class="header_list-item">Blog</li>
+                <li class="header_list-item">Discover</li>
+                <li class="header_list-item">Creators</li>
+                <li class="header_list-item">Sell</li>
+                <li class="header_list-item">Stats</li>
             </ul>
-            <button type="button" class="button">Contact</button>
+        </div>
+        <div class="header_section">
+            <input class="input-search" type="search" placeholder="Search Art Work / Creator">
+            <button type="button" class="button">Connect Wallet</button>
         </div>
     </header>
-    <section class="about">
-        <div class="about_box wrapper">
-            <div class="about_text">
-                <p class="about_text__item orange-text">Gabriel Pires</p>
-                <p class="about_text__item big-text">The Simple,
-                    Clean Design</p>
-                <p class="about_text__item gray-text">Agency provides a full service range including technical skills, design, business understanding.</p>
-                <button type="button" class="button-orange">See my work</button>
+
+    <section class="about_section">
+        <div class="about_section__text">
+            <div>
+                <div class="about_section__line"></div>
+                <p class="big-text">Discover And Create NFTs</p>
             </div>
-            <img src="../src/about.png" alt="about">
+            <p class="medium-text">Discover, Create and Sell NFTs On Our NFT Marketplace With Over Thousands Of NFTs
+                And
+                Get a <b>$20 bonus.</b></p>
+            <div class="about_section__buttons">
+                <button type="button" class="button">Explore more</button>
+                <button type="button" class="button-white">Create NFT</button>
+            </div>
+            <div class="about_section__numbers">
+                <div>
+                    <p class="medium-big-text">430K+</p>
+                    <p class="small-text">Art Works</p>
+                </div>
+                <div>
+                    <p class="medium-big-text">159K+</p>
+                    <p class="small-text">Art Creators</p>
+                </div>
+                <div>
+                    <p class="medium-big-text">87K+</p>
+                    <p class="small-text">Collections</p>
+                </div>
+            </div>
+        </div>
+        <section class="about_section__image">
+            <img src="../src/about-section-image.png" alt="about-section-image">
+        </section>
+    </section>
+
+    <section class="weekly_section wrapper">
+        <p class="weekly_section__title">Weekly - Top NFT</p>
+        <div class="nft_cards">
+            <div class="nft_cards__item">
+                <div class="relative">
+                    <span class="nft_cards__item__expiration-date">07h 09m 12s</span>
+                    <img class="nft_cards__item__image" src="../src/nft-1.png" alt="nft picture">
+                </div>
+                <span class="nft_cards__item__title">Sun-Glass</span>
+                <div class="nft_cards__item__bid-price-and-button">
+                    <div class="nft_cards__item__bid-price-and-button__bid-price">
+                        <span class="nft_cards__item__current-bid">Current bid</span>
+                        <div class="nft_cards__item__bid-price__price">
+                            <img src="../src/eth-symbol.svg" alt="eth symbol">
+                            <span class="nft_cards__item__price">1.75</span>
+                        </div>
+                    </div>
+                    <button type="button" class="button">Place Bid</button>
+                </div>
+            </div>
+
+            <div class="nft_cards__item">
+                <div class="relative">
+                    <span class="nft_cards__item__expiration-date">07h 09m 12s</span>
+                    <img class="nft_cards__item__image" src="../src/nft-2.png" alt="nft picture">
+                </div>
+                <span class="nft_cards__item__title">Sun-Glass</span>
+                <div class="nft_cards__item__bid-price-and-button">
+                    <div class="nft_cards__item__bid-price-and-button__bid-price">
+                        <span class="nft_cards__item__current-bid">Current bid</span>
+                        <div class="nft_cards__item__bid-price__price">
+                            <img src="../src/eth-symbol.svg" alt="eth symbol">
+                            <span class="nft_cards__item__price">1.75</span>
+                        </div>
+                    </div>
+                    <button type="button" class="button">Place Bid</button>
+                </div>
+            </div>
+
+            <div class="nft_cards__item">
+                <div class="relative">
+                    <span class="nft_cards__item__expiration-date">07h 09m 12s</span>
+                    <img class="nft_cards__item__image" src="../src/nft-3.png" alt="nft picture">
+                </div>
+                <span class="nft_cards__item__title">NuEvey</span>
+                <div class="nft_cards__item__bid-price-and-button">
+                    <div class="nft_cards__item__bid-price-and-button__bid-price">
+                        <span class="nft_cards__item__current-bid">Current bid</span>
+                        <div class="nft_cards__item__bid-price__price">
+                            <img src="../src/eth-symbol.svg" alt="eth symbol">
+                            <span class="nft_cards__item__price">1.25</span>
+                        </div>
+                    </div>
+                    <button type="button" class="button">Place Bid</button>
+                </div>
+            </div>
+
+            <div class="nft_cards__item">
+                <div class="relative">
+                    <span class="nft_cards__item__expiration-date">07h 09m 12s</span>
+                    <img class="nft_cards__item__image" src="../src/nft-4.png" alt="nft picture">
+                </div>
+                <span class="nft_cards__item__title">NuEvey</span>
+                <div class="nft_cards__item__bid-price-and-button">
+                    <div class="nft_cards__item__bid-price-and-button__bid-price">
+                        <span class="nft_cards__item__current-bid">Current bid</span>
+                        <div class="nft_cards__item__bid-price__price">
+                            <img src="../src/eth-symbol.svg" alt="eth symbol">
+                            <span class="nft_cards__item__price">1.25</span>
+                        </div>
+                    </div>
+                    <button type="button" class="button">Place Bid</button>
+                </div>
+            </div>
         </div>
     </section>
-    <main class="main">
 
-    </main>
     <footer class="footer">
 
     </footer>
 </body>
 </html>
-

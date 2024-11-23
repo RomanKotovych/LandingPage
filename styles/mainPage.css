@@ -1,111 +1,242 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Epilogue", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgba(249, 249, 249, 0.9764705882);
 }
 
 .wrapper {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 20px 32px;
 }
 
-.orange-text {
-  text-transform: uppercase;
-  color: #EF6D58;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
+@media (width < 1440px) {
+  .wrapper {
+    width: 100%;
+  }
 }
-
-.big-text {
-  color: white;
-  font-weight: 800;
-  font-size: 65px;
-  line-height: 80px;
-}
-
-.gray-text {
-  color: #B2B2BA;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-}
-
-.button, .button-orange {
-  background-color: inherit;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.29);
-  text-transform: uppercase;
-  cursor: pointer;
-  font-weight: 900;
-  font-size: 14px;
-  width: 138px;
-  height: 48px;
-}
-.button:hover, .button-orange:hover {
-  background-color: white;
-  color: #28293E;
-}
-
-.button-orange {
-  background-color: #EF6D58;
-  width: 154px;
-  height: 48px;
-}
-
 .header {
-  background-color: #28293E;
-  color: white;
-  padding: 20px 0;
-}
-.header_box {
   display: flex;
+  background-color: rgba(249, 249, 249, 0.9764705882);
   justify-content: space-between;
-  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
 }
-.header_logo {
+.header_section {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
+  justify-content: space-between;
+  width: auto;
+  flex: 1;
 }
-.header_logo__text {
-  font-weight: bold;
+.header_section:last-of-type {
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
 }
 .header_list {
   display: flex;
-  gap: 150px;
+  gap: 50px;
   list-style-type: none;
+  color: #606060;
+  font-size: 18px;
+  text-transform: uppercase;
+  flex: 2;
+  justify-content: flex-start;
 }
 .header_list-item {
   cursor: pointer;
-  transition: 0.4s;
-}
-.header_list-item:hover {
-  transform: translateY(-2px);
 }
 
-.about {
-  background-color: #28293E;
+.input-search {
+  border-radius: 15px;
+  background-color: #EDEDED;
+  border: none;
+  width: 48.3333333333%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.input-search::placeholder {
+  color: #C2C3CB;
+  text-align: center;
+  font-size: 16px;
+}
+
+.button, .button-white {
+  background-color: #141416;
   color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 16px;
+  width: 27.7777777778%;
+  height: 100%;
+  border: none;
+  cursor: pointer;
 }
-.about_box {
+
+.button-white {
+  background-color: rgba(249, 249, 249, 0.9764705882);
+  border: 1px solid black;
+  border-radius: 12px;
+  color: black;
+}
+
+.big-text {
+  font-size: 72px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.medium-text {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  color: #676767;
+}
+
+.medium-big-text {
+  font-size: 36px;
+  font-weight: 600;
+  color: #141416;
+  font-family: "Public Sans", sans-serif;
+}
+
+.small-text {
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  color: #848586;
+  font-weight: 500;
+}
+
+b {
+  color: #141416;
+}
+
+.about_section {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 90px 0;
+  margin-left: 30px;
+  background-color: rgba(249, 249, 249, 0.9764705882);
 }
-.about_text {
+.about_section__line {
+  background-color: lightgray;
+  width: 200px;
+  height: 2px;
+}
+.about_section__text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 35px;
+  margin-top: 50px;
+  width: 50%;
 }
-.about_text__item {
-  width: 460px;
+.about_section__image img {
+  max-width: 100%;
+}
+.about_section__buttons {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 23px;
+  height: 9%;
+}
+.about_section__buttons .button, .about_section__buttons .button-white {
+  border-radius: 12px;
+  grid-column: auto/span 3;
+  width: auto;
+}
+.about_section__buttons .button-white {
+  grid-column: auto/span 2;
+}
+.about_section__numbers {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 50px;
+}
+
+.weekly_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1F1F1;
+  font-weight: 600;
+  gap: 80px;
+}
+.weekly_section__title {
+  color: #C5C5C5;
+  font-size: 45px;
+  font-family: "Poppins", sans-serif;
+}
+
+.nft_cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 35px;
+  align-items: center;
+}
+.nft_cards__item {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: white;
+  border-radius: 23px;
+  justify-content: space-between;
+  gap: 10px;
+}
+.nft_cards__item__expiration-date {
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgba(28, 29, 32, 0.35);
+  padding: 9px 14px;
+  border-radius: 9px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(28, 29, 32, 0.09);
+  left: 50%;
+  top: 5%;
+  color: white;
+}
+.nft_cards__item__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+}
+.nft_cards__item__current-bid {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #94A3B8;
+  font-weight: 400;
+}
+.nft_cards__item__bid-price-and-button {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+}
+.nft_cards__item__bid-price-and-button__price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.nft_cards__item__bid-price-and-button .button, .nft_cards__item__bid-price-and-button .button-white {
+  width: 50%;
+}
+.nft_cards__item__bid-price__price img {
+  vertical-align: middle;
+}
+
+.relative {
+  position: relative;
 }
 
 /*# sourceMappingURL=mainPage.css.map */
