@@ -17,10 +17,6 @@ html {
   max-width: 1440px;
   margin: 0 auto;
   padding: 20px 32px;
-
-  @media (width < 1440px) {
-    width: 100%;
-  }
 }
 
 
@@ -44,6 +40,10 @@ html {
       gap: 20px;
       justify-content: flex-end;
       align-items: center;
+    }
+
+    .button {
+      padding: 16px;
     }
   }
 
@@ -87,7 +87,6 @@ html {
   text-transform: uppercase;
   text-align: center;
   border-radius: 16px;
-  width: calc(100% / (1440 / 2) * 200);
   height: 100%;
   border: none;
   cursor: pointer;
@@ -96,7 +95,7 @@ html {
 .button-white {
   @extend .button;
   background-color: $whiteColor;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 12px;
   color: black;
 }
@@ -138,7 +137,7 @@ b {
   display: flex;
   margin-left: 30px;
   background-color: $whiteColor;
-  margin-top: 110px;
+  margin-top: 70px;
 
   &__line {
     background-color: lightgray;
@@ -216,6 +215,7 @@ b {
     border-radius: 23px;
     justify-content: space-between;
     gap: 10px;
+    box-shadow: 38.9404px 11.8001px 59.0006px rgba(199, 199, 199, 0.6);
 
     &__timer {
       position: absolute;
@@ -299,7 +299,7 @@ b {
   justify-content: space-between;
 
   &__table {
-    width: 100%;
+    width: 95%;
     border-collapse: collapse;
     &__header {
       text-align: left;
@@ -359,6 +359,37 @@ b {
         }
       }
     }
+  }
+}
+
+
+.explore-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  &__filters {
+    display: flex;
+    gap: 20px;
+
+    .button {
+      padding: 14px 18px;
+      border-radius: 13px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+
+  .nft-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 65px;
   }
 }
 
